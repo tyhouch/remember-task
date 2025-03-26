@@ -7,7 +7,7 @@ import asyncio
 
 from app.services.llm_service import LLMService
 
-load_dotenv()
+load_dotenv(override=True)
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 

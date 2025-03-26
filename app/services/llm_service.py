@@ -7,21 +7,6 @@ class LLMService:
         self.client = anthropic.Anthropic(api_key=api_key)
         self.model = "claude-3-5-sonnet-latest"
     
-    async def generate_response(self, message: str) -> str:
-        """Generate a response using the LLM"""
-        try:
-            response = self.client.messages.create(
-                model=self.model,
-                max_tokens=1000,
-                messages=[
-                    {"role": "user", "content": message}
-                ]
-            )
-            return response.content[0].text
-        except Exception as e:
-            # In a real app, you'd want to log this
-            return f"Error generating response: {str(e)}"
-    
     async def stream_response(self, message: str):
         """Stream a response from the LLM"""
         try:
