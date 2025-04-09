@@ -7,6 +7,7 @@ In this task, you'll implement a memory system for an AI assistant. The system s
 The repository contains a working FastAPI application with:
 * A streaming chat endpoint that connects to Claude
 * A simple web interface for testing the chat functionality
+* An example tool use pattern in `llm_service`
 * Basic project structure and configuration
 
 ## Your Task
