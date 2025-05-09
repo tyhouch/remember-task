@@ -13,21 +13,7 @@ class LLMService:
         
       
         self.tools = [
-            {
-                "name": "get_current_time",
-                "description": "Get the current time",
-                "input_schema": {
-                    "type": "object",
-                    "properties": {},
-                    "required": []
-                }
-            }
         ]
-    
-    def get_current_time(self):
-        """Return the current time in readable format"""
-        current_time = datetime.datetime.now().strftime("%H:%M on %B %d, %Y")
-        return {"time": current_time}
     
     async def stream_response(self, message: str):
         """Stream a response from the LLM with tool use support"""
