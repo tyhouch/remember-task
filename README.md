@@ -39,7 +39,7 @@ Assistant: "Today is May 9, 2025. It is not winter."
 
 ## Getting Started
 1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
+2. Install dependencies: `pip install -r requirements.txt` (Note, not all python versions are compatible. When in doubt, use python 3.10)
 3. Set your `ANTHROPIC_API_KEY` in `.env` (copy from `.env.example`)
 4. Run the application: `uvicorn app.main:app --reload`
 5. Access the chat interface at http://localhost:8000
